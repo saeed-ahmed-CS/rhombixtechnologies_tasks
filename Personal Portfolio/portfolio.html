@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+   <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="left">Portfolio</div>
+           <div class="right">
+             <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#background">Background</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#skills">Skills</a></li>
+                   <li><a href="#contact">Contact</a></li>
+             </ul>
+           </div> 
+        </nav>
+    </header>
+    
+    <main>
+                                     <!-- first section -->
+        <section class="firstsection">
+
+            <div class="leftsection">
+                Hi, My name is <span
+                class="purple">Saeed Ahmed</span>
+                and I am a passionate
+                 <span id="element"></span>
+            </div>
+        
+            <div class="rightsection">
+                <img src="2nd-removebg-preview.png" alt="">
+            </div>
+        </section>
+           
+                           <!-- second section -->
+        <section id="background">
+
+    <h1 class="section-title">Background</h1>
+
+    <div class="background-container">
+
+        <div class="card">
+            <h2>🎓 Education</h2>
+            <p>
+                BS Computer Science Student <br>
+                Sindh Agriculture University, Tando Jam
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📜 Certifications</h2>
+
+            <ul>
+                <li>HTML & CSS Certificate</li>
+                <li>Web Development Certificate</li>
+                <li>Video Editing & AI</li>
+                <li>Social Media Marketing</li>
+                <li>Spoken English</li>
+                <li>Canva Freelancing</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+                <!-- third section -->
+ <section id="skills">
+
+    <h1 class="section-title">Skills</h1>
+
+    <div class="skills-container">
+
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">Javascript</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Video Editing</div>
+        <div class="skill-card">Communication Skills</div>
+    </div>
+ </section>
+     
+          <!-- 4th section -->
+
+   <section id="Projects">
+
+    <h1 class="section-title">Projects</h1>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <h2>Portfolio Website</h2>
+             <p>Personal responsive portfolio buit with HTML & CSS.</p>
+             <a href="portfolio.html"> <button>View Project</button></a>
+            
+        </div>
+
+        <div class="project-card">
+            <h2>Login Page</h2>
+            <p>Modern login page with responsive design.</p>
+            <a href="Login page/login-page.html"> <button>View Project</button></a>
+          
+           
+        </div>
+
+        <div class="project-card">
+            <h2>Shapes Hover Game</h2>
+            <p>Interactive hover effects using CSS.</p>
+            <a href="Hover shapes game/game.html"><button>View Project</button></a>
+            
+        </div>
+
+
+    </div>
+   </section>
+
+        <!-- 5th section -->
+         <section id="contact">
+            <h1 class="section-title">Contact Me</h1>
+
+            <div class="contact-container">
+                <form>
+                    <input type="name" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" row="5"></textarea>
+                    <button type="submit">Send Message </button>
+                </form>
+            </div>
+         </section>
+
+         <footer><p>© 2026 Saeed Ahmed | All Rights Reserved</p></footer>
+ </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+     <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'C++ Programmer ', 'Python Programmer'],
+      typeSpeed: 50, 
+    });
+  </script>
+</body>
+</html>
