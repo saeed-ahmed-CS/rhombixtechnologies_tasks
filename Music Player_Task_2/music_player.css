@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.music-player{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+   backdrop-filter: blur(10px);
+   box-shadow: 0 8px 20 rgba(0, 0, 0, 0.3);
+}
+
+    /* heading */
+.music-player h1{
+  margin-bottom: 20px;
+} 
+
+#cover{
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+      /* song title */
+#song-title{
+   font-size: 24px;
+   margin-bottom: 5px;
+}
+
+  /* artist name */
+#artist-name{
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* control buttons */
+.controls{
+    margin: 20px 0;
+}
+
+.controls button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 0 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.controls button:hover{
+    transform: scale(1.1);
+}
+
+/* volume */
+.volume{
+    margin: 20px 0;
+}
+#volume-slider{
+    width: 70%;
+}
+
+/* search bar */
+#search{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    outline: none;
+}
+
+/* playlist */
+#playlist{
+    list-style: none;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}
+#playlist li{
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playlist li:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* mobile responsive */
+@media(max-width:400px){
+    .music-player{
+        width: 90%;
+    }
+    #cover{
+        width: 180px;
+        height: 180px;
+    }
+}
